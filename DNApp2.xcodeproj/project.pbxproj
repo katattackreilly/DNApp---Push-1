@@ -14,6 +14,8 @@
 		B61E32B619FC2132001451D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61E32B519FC2132001451D0 /* Images.xcassets */; };
 		B61E32B919FC2132001451D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61E32B719FC2132001451D0 /* LaunchScreen.xib */; };
 		B61E32C519FC2132001451D0 /* DNApp2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B61E32C419FC2132001451D0 /* DNApp2Tests.m */; };
+		B66DAE0B19FDD406003F3D0A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66DAE0A19FDD406003F3D0A /* HomeViewController.m */; };
+		B66DAE0D19FDD5D1003F3D0A /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66DAE0C19FDD5D1003F3D0A /* Launch.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		B61E32BE19FC2132001451D0 /* DNApp2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNApp2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61E32C319FC2132001451D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B61E32C419FC2132001451D0 /* DNApp2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNApp2Tests.m; sourceTree = "<group>"; };
+		B66DAE0919FDD406003F3D0A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B66DAE0A19FDD406003F3D0A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B66DAE0C19FDD5D1003F3D0A /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,9 @@
 				B61E32AF19FC2132001451D0 /* ViewController.h */,
 				B61E32B019FC2132001451D0 /* ViewController.m */,
 				B61E32B219FC2132001451D0 /* Main.storyboard */,
+				B66DAE0C19FDD5D1003F3D0A /* Launch.storyboard */,
+				B66DAE0919FDD406003F3D0A /* HomeViewController.h */,
+				B66DAE0A19FDD406003F3D0A /* HomeViewController.m */,
 				B61E32B519FC2132001451D0 /* Images.xcassets */,
 				B61E32B719FC2132001451D0 /* LaunchScreen.xib */,
 				B61E32A819FC2132001451D0 /* Supporting Files */,
@@ -202,6 +210,7 @@
 				B61E32B419FC2132001451D0 /* Main.storyboard in Resources */,
 				B61E32B919FC2132001451D0 /* LaunchScreen.xib in Resources */,
 				B61E32B619FC2132001451D0 /* Images.xcassets in Resources */,
+				B66DAE0D19FDD5D1003F3D0A /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +231,7 @@
 				B61E32B119FC2132001451D0 /* ViewController.m in Sources */,
 				B61E32AE19FC2132001451D0 /* AppDelegate.m in Sources */,
 				B61E32AB19FC2132001451D0 /* main.m in Sources */,
+				B66DAE0B19FDD406003F3D0A /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +356,7 @@
 				INFOPLIST_FILE = DNApp2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -356,6 +367,7 @@
 				INFOPLIST_FILE = DNApp2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -412,6 +424,7 @@
 				B61E32CA19FC2132001451D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B61E32CB19FC2132001451D0 /* Build configuration list for PBXNativeTarget "DNApp2Tests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				B61E32CD19FC2132001451D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

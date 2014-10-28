@@ -1,22 +1,22 @@
 //
-//  ViewController.m
+//  HomeViewController.m
 //  DNApp2
 //
-//  Created by Reilly, Kat on 10/25/14.
+//  Created by Reilly, Kat on 10/26/14.
 //  Copyright (c) 2014 Kat Reilly. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 
-@interface ViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +24,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)unwindFromView:(UIStoryboardSegue *)segue {}
 
 -(UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
