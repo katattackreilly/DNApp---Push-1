@@ -49,19 +49,6 @@
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>2B0D0D83EAE934D4E47827F6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-DNApp2.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>3D275349A0533C829ADDDCA7</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -77,11 +64,31 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>515360253B7E7F206D8B6B51</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-DNApp2.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6B659DD17B30E4135B538F83</key>
+		<dict>
+			<key>fileRef</key>
+			<string>515360253B7E7F206D8B6B51</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>A8379929400C235E4D63201B</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>2B0D0D83EAE934D4E47827F6</string>
+				<string>515360253B7E7F206D8B6B51</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -226,7 +233,7 @@ fi
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>D99F5AED9A70AA81EC595983</string>
+				<string>6B659DD17B30E4135B538F83</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -1002,13 +1009,6 @@ fi
 			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D99F5AED9A70AA81EC595983</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2B0D0D83EAE934D4E47827F6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

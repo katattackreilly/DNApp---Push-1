@@ -1,2 +1,0 @@
-PODS_DNAPP__HEAP_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/Heap"
-PODS_DNAPP__HEAP_OTHER_LDFLAGS = -l"Heap" -l"icucore" -framework "CFNetwork" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
