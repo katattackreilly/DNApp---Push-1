@@ -1,0 +1,2 @@
+PODS_DNAPP__ANALYTICS_GCC_PREPROCESSOR_DEFINITIONS = ANALYTICS_VERSION=1.8.0
+PODS_DNAPP__ANALYTICS_OTHER_LDFLAGS = -framework "SystemConfiguration" -weak_framework "CoreBlueTooth" -weak_framework "SystemConfiguration"
