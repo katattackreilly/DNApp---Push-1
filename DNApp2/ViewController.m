@@ -8,10 +8,14 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIView *dialogView;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 - (IBAction)loginButtonDidPress:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIImageView *emailImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *passwordImageView;
 
 @end
 
@@ -19,8 +23,47 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.emailTextField.delegate = self;
+    self.passwordTextField.delegate = self;
 }
+
+    
+    // detect the kind of field
+    - (void)textFieldDidBeginEditing:(UITextField*)textField {
+        //if the field is email
+        if ([textField isEqual: self.emailTextField]) {
+            //do the following:
+                    //NSLog(@"Email!");
+            // set the background image to the active field state
+            [self.emailTextField setBackground:[UIImage imageNamed:@"input-outline-active"]];
+            
+            // set the icon image to its active state
+            self.emailImageView.image = [UIImage imageNamed:@"icon-mail-active"];
+        } else{
+            // set the background image to the inactive field state
+            [self.emailTextField setBackground:[UIImage imageNamed:@"input-outline"]];
+            
+            // set the icon image to its inactive state
+            self.emailImageView.image = [UIImage imageNamed:@"icon-mail"];
+        }
+        
+        //if the field is password
+        if ([textField isEqual: self.passwordTextField]) {
+            //do the following
+            NSLog(@"Password!");
+            // set the background image to the active field state
+            [self.passwordTextField setBackground:[UIImage imageNamed:@"input-outline-active"]];
+            
+            // set the icon image to its active state
+            self.passwordImageView.image = [UIImage imageNamed:@"icon-password-active"];
+        }else {
+            // set the background image to the inactive field state
+            [self.passwordTextField setBackground:[UIImage imageNamed:@"input-outline"]];
+            
+            // set the icon image to its inactive state
+            self.passwordImageView.image = [UIImage imageNamed:@"icon-password"];
+        }
+    }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -50,7 +93,10 @@
     
     //animateWithDuration with Damping
     [UIView animateWithDuration:0.7 delay:0.3 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:0 animations:^{
-        //Change the size of the dialogView
-        [self.dialogView setFrame:CGRectMake(self.dialogView.frame.origin.x, self.dialogView.frame.origin.y, self.dialogView.frame.size.width, 320)];} completion:^(BOOL finished) { }];
+        //Elongate the size of the dialog view, and make it jump 60 pixels up when keyboard is up
+        if (self.dialogView.frame.origin.y ==144) {
+             [self.dialogView setFrame:CGRectMake(self.dialogView.frame.origin.x, self.dialogView.frame.origin.y-60, self.dialogView.frame.size.width, 320)];
+        }
+       } completion:^(BOOL finished) { }];
 }
 @end

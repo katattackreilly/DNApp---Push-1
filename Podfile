@@ -4,6 +4,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'DNApp2' do
 pod 'Canvas', '~> 0.1'
+pod 'TPKeyboardAvoiding', '~> 1.2'
 
 end
 

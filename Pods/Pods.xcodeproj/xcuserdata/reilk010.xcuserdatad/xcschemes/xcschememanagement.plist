@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-DNApp2-TPKeyboardAvoiding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-DNApp2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,142 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02244EC7FB7454F8FCAE3FB0</key>
+		<key>709B48F2920E88591EB37F50</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>117579A384C0B96B574FA0D4</key>
+		<key>D477AFC262D63E0F2B61BA02</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>139701F40CF8B7F0454F325D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1650AEE3FB9A34787C7A6B7C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2985670E42E80B84B76B8EDC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2AA6CAA024F536043E495DC7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>31F7C072C91BAACED48391CB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>378506982200F62212B9084A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4FAE04231F505EBAFB4CB41B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5B83534E00C9FE26D79475AF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>66FED321F10DE3B8DF23CD00</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6CFB142FB536418FD53B32BE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6D7997FB1376AB73A13F0EAD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8336583FAEE919A21CBA5DA4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>88D73097296287E3402A4565</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8C62A74A7E4A770CFFE8B728</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8FE3314B981754668B5FE115</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>951155CBEB75D7DCF37E66D7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9848F0298467414B52552D65</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9BF40908C11E08B35C6B89EF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9ED8763EDE4C7ED23080AAC2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B3DE7DF88F607944A7FA7977</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B68FF1866B8F4B48F4459B0E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B94BB1D28D73DBD814D0C401</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EAF30BDEB662001A9C16F0C5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F32A550EA68E1A4256CD2A6E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F4A6683627A1F19D513188BB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FF43C42B145CA4E8B4AB8CFC</key>
+		<key>FF1D1BCC1949CC8F298C1C0A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

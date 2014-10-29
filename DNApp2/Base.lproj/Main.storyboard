@@ -17,87 +17,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wht-OH-pxa" customClass="CSAnimationView">
-                                <rect key="frame" x="20" y="144" width="280" height="280"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzZ-Rh-n8o" customClass="TPKeyboardAvoidingScrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="center" minimumFontSize="17" background="input-outline" translatesAutoresizingMaskIntoConstraints="NO" id="4Q1-g4-fKW">
-                                        <rect key="frame" x="15" y="99" width="250" height="44"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" background="input-outline" translatesAutoresizingMaskIntoConstraints="NO" id="yGQ-Hn-Dvc">
-                                        <rect key="frame" x="15" y="153" width="250" height="44"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-mail" translatesAutoresizingMaskIntoConstraints="NO" id="NDG-7K-4ok">
-                                        <rect key="frame" x="31" y="112" width="26" height="18"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-password" translatesAutoresizingMaskIntoConstraints="NO" id="XPl-hz-sEc">
-                                        <rect key="frame" x="31" y="162" width="25" height="25"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZt-20-mZu">
-                                        <rect key="frame" x="15" y="217" width="250" height="44.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                        <state key="normal" title="Log in" backgroundImage="button-blue">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="loginButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CjC-EY-0Sj"/>
-                                        </connections>
-                                    </button>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hJJ-Nk-YsI" customClass="CSAnimationView">
-                                        <rect key="frame" x="38" y="4" width="204" height="91"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wht-OH-pxa" customClass="CSAnimationView">
+                                        <rect key="frame" x="20" y="144" width="280" height="280"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESIGNER NEWS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DAa-Ul-62E">
-                                                <rect key="frame" x="20" y="47" width="164" height="24"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="center" minimumFontSize="17" background="input-outline" translatesAutoresizingMaskIntoConstraints="NO" id="4Q1-g4-fKW">
+                                                <rect key="frame" x="15" y="99" width="250" height="44"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" background="input-outline" translatesAutoresizingMaskIntoConstraints="NO" id="yGQ-Hn-Dvc">
+                                                <rect key="frame" x="15" y="153" width="250" height="44"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-mail" translatesAutoresizingMaskIntoConstraints="NO" id="NDG-7K-4ok">
+                                                <rect key="frame" x="31" y="112" width="26" height="18"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-password" translatesAutoresizingMaskIntoConstraints="NO" id="XPl-hz-sEc">
+                                                <rect key="frame" x="31" y="162" width="25" height="25"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZt-20-mZu">
+                                                <rect key="frame" x="15" y="217" width="250" height="44.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                                <color key="textColor" red="0.1247329407" green="0.15229335390000001" blue="0.2150015783" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log in to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C7H-KU-Jzj">
-                                                <rect key="frame" x="72" y="20" width="61" height="19"/>
+                                                <state key="normal" title="Log in" backgroundImage="button-blue">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CjC-EY-0Sj"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hJJ-Nk-YsI" customClass="CSAnimationView">
+                                                <rect key="frame" x="38" y="4" width="204" height="91"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESIGNER NEWS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DAa-Ul-62E">
+                                                        <rect key="frame" x="20" y="47" width="164" height="24"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" red="0.1247329407" green="0.15229335390000001" blue="0.2150015783" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log in to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C7H-KU-Jzj">
+                                                        <rect key="frame" x="72" y="20" width="61" height="19"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                                        <color key="textColor" red="0.1247329407" green="0.15229335390000001" blue="0.2150015783" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Whoops. Please try again." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZR-L8-s2r">
+                                                <rect key="frame" x="50" y="280" width="180" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
-                                                <color key="textColor" red="0.1247329407" green="0.15229335390000001" blue="0.2150015783" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.98572236299514771" green="0.0" blue="0.39510828256607056" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="zoomOut"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                                <real key="value" value="0.29999999999999999"/>
-                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Whoops. Please try again." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZR-L8-s2r">
-                                        <rect key="frame" x="50" y="280" width="180" height="21"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
-                                        <color key="textColor" red="0.98572236299514771" green="0.0" blue="0.39510828256607056" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="zoomOut"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.1247329407" green="0.15229335390000001" blue="0.2150015783" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="L9M-yJ-xjL"/>
                     <connections>
                         <outlet property="dialogView" destination="Wht-OH-pxa" id="UXB-ch-LIa"/>
+                        <outlet property="emailImageView" destination="NDG-7K-4ok" id="OoI-4N-wH3"/>
+                        <outlet property="emailTextField" destination="4Q1-g4-fKW" id="N0o-w7-KLF"/>
                         <outlet property="loginButton" destination="UZt-20-mZu" id="TpV-8e-GjK"/>
+                        <outlet property="passwordImageView" destination="XPl-hz-sEc" id="6GQ-S7-ZMk"/>
+                        <outlet property="passwordTextField" destination="yGQ-Hn-Dvc" id="y1x-4n-2R9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
