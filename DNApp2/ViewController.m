@@ -50,7 +50,7 @@
         //if the field is password
         if ([textField isEqual: self.passwordTextField]) {
             //do the following
-            NSLog(@"Password!");
+                //NSLog(@"Password!");
             // set the background image to the active field state
             [self.passwordTextField setBackground:[UIImage imageNamed:@"input-outline-active"]];
             
@@ -76,27 +76,56 @@
 }
 
 - (IBAction)loginButtonDidPress:(id)sender {
-    //Animate login  button
-    [UIView animateWithDuration:0.1 animations: ^{
-        self.loginButton.transform = CGAffineTransformMakeTranslation(10, 0);
-    } completion:^(BOOL finished) {
-    //Step 2
-    [UIView animateWithDuration:0.1 animations: ^{
-        self.loginButton.transform = CGAffineTransformMakeTranslation(-10, 0);
+    
+    //get input value of email field
+    NSString * emailInput = _emailTextField.text;
+        //NSLog(emailInput);
+    
+    //get input value of password field
+    NSString * passwordInput = _passwordTextField.text;
+        //NSLog(passwordInput);
+    
+    //check if email and password credentials are valid
+    if ([emailInput isEqualToString:@"email"] && [passwordInput isEqualToString:@"password"]){
+            //NSLog(@"Sucess!");
+        
+        //if valid, go to Home
+        [self performSegueWithIdentifier: @"loginToHomeScene" sender: self];
+        
+        //if MASE, go to MASE
+    } else if([emailInput isEqualToString:@"Mase"] && [passwordInput isEqualToString:@"password"]){
+        [self performSegueWithIdentifier: @"goToMASE" sender: self];
+    }
+    
+    //if not valid, activate error state
+    else {
+        
+        NSLog(@"Fail!");
+        
+        //Animate login  dialog to show error
+        [UIView animateWithDuration:0.1 animations: ^{
+            self.loginButton.transform = CGAffineTransformMakeTranslation(10, 0);
         } completion:^(BOOL finished) {
-    //Step 3
-    [UIView animateWithDuration:0.1 animations: ^{
-        self.loginButton.transform = CGAffineTransformMakeTranslation(0, 0);
+            //Step 2
+            [UIView animateWithDuration:0.1 animations: ^{
+                self.loginButton.transform = CGAffineTransformMakeTranslation(-10, 0);
+            } completion:^(BOOL finished) {
+                //Step 3
+                [UIView animateWithDuration:0.1 animations: ^{
+                    self.loginButton.transform = CGAffineTransformMakeTranslation(0, 0);
+                }];
             }];
         }];
-    }];
+        
+        //animateWithDuration with Damping
+        [UIView animateWithDuration:0.7 delay:0.3 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:0 animations:^{
+            //Elongate the size of the dialog view, and make it jump 60 pixels up when keyboard is up
+            if (self.dialogView.frame.origin.y ==144) {
+                [self.dialogView setFrame:CGRectMake(self.dialogView.frame.origin.x, self.dialogView.frame.origin.y-60, self.dialogView.frame.size.width, 320)];
+            }
+        } completion:^(BOOL finished) { }];
+    }
     
-    //animateWithDuration with Damping
-    [UIView animateWithDuration:0.7 delay:0.3 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:0 animations:^{
-        //Elongate the size of the dialog view, and make it jump 60 pixels up when keyboard is up
-        if (self.dialogView.frame.origin.y ==144) {
-             [self.dialogView setFrame:CGRectMake(self.dialogView.frame.origin.x, self.dialogView.frame.origin.y-60, self.dialogView.frame.size.width, 320)];
-        }
-       } completion:^(BOOL finished) { }];
+
 }
 @end

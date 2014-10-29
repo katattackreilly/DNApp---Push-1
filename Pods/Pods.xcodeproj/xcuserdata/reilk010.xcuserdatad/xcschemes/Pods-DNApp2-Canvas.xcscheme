@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FF1D1BCC1949CC8F298C1C0A"
+               BlueprintIdentifier = "33BF82B7F4CCDA6408D1FE10"
                BuildableName = "libPods-DNApp2-Canvas.a"
                BlueprintName = "Pods-DNApp2-Canvas"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -107,11 +107,49 @@
                         <outlet property="loginButton" destination="UZt-20-mZu" id="TpV-8e-GjK"/>
                         <outlet property="passwordImageView" destination="XPl-hz-sEc" id="6GQ-S7-ZMk"/>
                         <outlet property="passwordTextField" destination="yGQ-Hn-Dvc" id="y1x-4n-2R9"/>
+                        <segue destination="lVM-wy-cI0" kind="modal" identifier="loginToHomeScene" modalTransitionStyle="flipHorizontal" id="7Ak-Bo-nTL"/>
+                        <segue destination="Aru-F1-viW" kind="modal" identifier="goToMASE" modalTransitionStyle="crossDissolve" id="vga-na-vfs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="311" y="-121"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KZe-Ob-IDM">
+            <objects>
+                <viewController id="Aru-F1-viW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TDE-zu-Kdg"/>
+                        <viewControllerLayoutGuide type="bottom" id="3e3-gJ-TJb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="19X-fv-1sR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MASE!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kaf-d9-Qq8">
+                                <rect key="frame" x="124" y="211" width="73" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0L-7C-eHz">
+                                <rect key="frame" x="131" y="290" width="60" height="30"/>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleColor" red="0.0" green="0.69207702019999995" blue="0.67816570939999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" identifier="goToLogin" modalTransitionStyle="crossDissolve" id="eWB-Ag-5ob"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1247329407" green="0.15229335390000001" blue="0.2150015783" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uiS-ia-yc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="226" y="595"/>
         </scene>
         <!--Top Stories-->
         <scene sceneID="hrH-tJ-2Xs">
